@@ -1,0 +1,87 @@
+.nav {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    box-shadow:0px 4px 10px rgba(0, 0, 0, 0.534) ;
+}
+.top-nav {
+    width: 100%;
+    height: 50%;
+    background-color: rgb(25, 29, 33);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    
+}
+.top-nav .logo {
+    color: white;
+    font-size: 20px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.top-nav .serach-box {
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.top-nav .serach-box input {
+    width: 80%;
+    height: 100%;
+    padding-left: 10px ;
+    background-color: white;
+    border: none;
+    font-size: 14px;
+}
+.top-nav .serach-box button {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 20px;
+    background-color: white;
+    border: none;
+    padding-right: 20px;
+}
+
+.card-box svg{
+    color: white;
+    height: 25px;
+    width: 25px;
+    padding-right: 10px;
+    
+}
+.card-box span {
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.bottom-nav {
+    width: 100%;
+    height: 50%;
+    background-color: rgb(38, 45, 51);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    color: white;
+    list-style: none;
+    font-size: 20px;
+    
+}
+@media (max-width:750px) {
+   .top-nav .serach-box {
+        display: none;
+    }
+}
