@@ -9,12 +9,12 @@ export const category = [
     
     {
         id : 1 ,
-        name : "electronics" ,
+        name : "Electronics" ,
         image : elec
     } ,
      {
         id : 2 ,
-        name : "Feshion" ,
+        name : "Fashion" ,
         image : fesh
     } ,
      {
