@@ -4,8 +4,12 @@ import { FaShopify } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
 import { IoIosCart } from "react-icons/io";
 import { Link } from 'react-router-dom'
+import {useDispatch, useSelector} from "react-redux"
 
 function Nav() {
+  let dispatch = useDispatch()
+  let items = useSelector (state =>state)
+  console.log(items);
   return (
     <div className='nav'>
         <div className="top-nav">
@@ -22,7 +26,7 @@ function Nav() {
           </form>
 
           <div className="card-box">
-            <span>0</span>
+            <span>{items.cart.length}</span>
             <IoIosCart />
           </div>
         </div>

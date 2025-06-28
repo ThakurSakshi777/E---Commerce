@@ -33,7 +33,7 @@ function Shop() {
       </div>
       <div className="product-section">
         {Cate.map((item)=>(
-          <Product name={item.name} price ={item.price} image={item.image}/>
+          <Product name={item.name} price ={item.price} image={item.image} id ={item.id}/>
         ))}
       </div>
 

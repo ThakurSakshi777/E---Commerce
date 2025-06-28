@@ -31,7 +31,7 @@ function Home() {
      <h1 className='heading'> Trending Product</h1>
       <div className="product-section">
         {Cate.slice(0,7).map((item)=>(
-          <Product name={item.name} price ={item.price} image={item.image}/>
+          <Product name={item.name} price ={item.price} image={item.image} id = {item.id}/>
         ))}
       </div>
 
