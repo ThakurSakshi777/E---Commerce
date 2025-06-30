@@ -34,7 +34,7 @@ function Nav() {
         <div className="bottom-nav">
           <Link to ="/"> <li>Home</li> </Link>
           <Link to = "/shop"> <li>Shop</li> </Link>
-          <Link to = "/shop"> <li>Cart</li></Link>
+          <Link to = "/cart"> <li>Cart</li></Link>
            <Link to = "/contact"> <li>Contact</li> </Link>
         </div>
 
