@@ -19,6 +19,7 @@ function CartCard({name , price , image , id}) {
         <div className="right-card">
             <button onClick={()=>{
               dispatch(RemoveItem(id))
+              alert("Product Remove Successfully...")
             }}>Remove<RiDeleteBin6Line /></button>
         </div>
 
