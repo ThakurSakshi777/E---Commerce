@@ -26,9 +26,11 @@
     border-radius: 10px;
     font-size: 18px;
     cursor: pointer;
+    transition: all 1s;
 }
 .product-details button:hover {
-    opacity: 0.8;
+    background-color: rgba(217, 100, 53, 0.53);
+    color: white;
 }
 .product img {
     width: 100%;

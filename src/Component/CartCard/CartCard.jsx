@@ -1,20 +1,25 @@
 import React, { useState } from 'react'
 import "./cartCard.css"
 import { RiDeleteBin6Line } from "react-icons/ri";
+import { useDispatch } from 'react-redux';
+import { RemoveItem } from '../../redux/cartSlice';
 
-function CartCard() {
+function CartCard({name , price , image , id}) {
   let [ CheckEmpty , setCheckEmpty ] = useState()
+  let dispatch= useDispatch()
   return (
     <div className='cartcard'>
         <div className="left-card">
-            <img src="" alt="" />
+            <img src={image} alt="" />
             <div className="name-price">
-                <span>Summsung</span>
-                <span>Rs 1500</span>
+                <span>{name}</span>
+                <span>{price}</span>
             </div>
         </div>
         <div className="right-card">
-            <button>Remove<RiDeleteBin6Line /></button>
+            <button onClick={()=>{
+              dispatch(RemoveItem(id))
+            }}>Remove<RiDeleteBin6Line /></button>
         </div>
 
     </div>

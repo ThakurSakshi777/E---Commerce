@@ -25,10 +25,11 @@ function Nav() {
             <button><IoSearch /></button>
           </form>
 
+          <Link to = "/cart">
           <div className="card-box">
             <span>{items.cart.length}</span>
             <IoIosCart />
-          </div>
+          </div></Link>
         </div>
         
         <div className="bottom-nav">
